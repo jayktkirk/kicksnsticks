@@ -1,0 +1,33 @@
+{
+    "name": "kicksnsticks",
+    "version": "0.0.1",
+    "description": "Kicks-N-Sticks Website",
+    "main": "site.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/server.js --exec babel-node --presets node6",
+        "build": "babel src -d dst",
+        "serve": "node dist/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jayktkirk/kicksnsticks.git"
+    },
+    "gitDependencies": {
+        "public-package-name": "https://github.com/jayktkirk/kicksnsticks.git#master"
+    },
+    "author": "Jayk Logan",
+    "license": "ISC",
+    "dependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-preset-node6": "^11.0.0",
+        "babel-register": "^6.24.1",
+        "eslint": "^5.9.0",
+        "express": "^4.16.2",
+        "express-graphql": "^0.6.11",
+        "git": "^0.1.5",
+        "graphql": "^0.11.7",
+        "lodash": "^4.17.4",
+        "nodemon": "^1.11.0"
+    }
+}
